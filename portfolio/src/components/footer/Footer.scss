@@ -1,0 +1,67 @@
+@import '../../scss/sass-variables';
+@import '../../scss/typography';
+@import '../../scss/mixins';
+@import '../../scss/margins';
+
+
+.footer {
+    color: $color-off-white;
+    background-color: $color-bg-blue;
+    font-size: 6.8rem;
+
+    text-transform: uppercase;
+
+    padding: 4.8rem 1.6rem 2.4rem;
+    
+    @include mq($bp-medium) {
+        font-size: 2rem;
+        padding: 1.6rem 3.2rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include mq($bp-large) {
+        padding: 1.6rem 4.8rem;
+    }
+
+    @include mq($bp-xlarge) {
+        padding: 1.6rem 6rem;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        font-weight: $font-weight-regular;
+
+        @include mq($bp-medium) {
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        &__item {
+            transition: 0.4s all ease-in-out;
+        
+            &:hover {
+                background-color: transparent;
+                color: transparent;
+                box-shadow: none;
+                text-shadow: 0 0 5px $color-off-white;
+            }
+        }
+    }
+
+    &__name {
+        text-align: end;
+        font-size: 2rem;
+        padding-top: 2rem;
+
+        @include mq($bp-medium) {
+            padding-top: 0;
+
+        }
+    }
+
+}
+
+

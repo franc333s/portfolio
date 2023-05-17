@@ -1,0 +1,61 @@
+// Colors
+$color-white: hsl(306 0% 100%); // #FFFFFF
+$color-off-white: hsl(36 26% 96%); // #F8F6F3
+$color-red: hsl(3 82% 59%); // #EC483F
+$color-blue: hsl(240 96% 58%); // #312DFB
+$color-green: hsl(81 100% 69%); // #C9FF63
+$color-gray: hsl(36 16% 93%); // #F0EEEA
+$color-black: hsl(0 0% 6%); // #101010
+
+
+// Color implementation
+$color-bg-white: $color-white;
+$color-bg-off-white: $color-off-white;
+$color-bg-red: $color-red;
+$color-bg-blue: $color-blue;
+$color-bg-green: $color-green;
+$color-bg-gray: $color-gray;
+$color-bg-black: $color-black;
+
+
+// Fonts
+
+    // Typefonts
+$font-primary:'IBM Plex Mono', 'Courier New', Courier, monospace;
+$font-secondary: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
+$font-primary-assistant: 'Fira Sans Condensed', Helvetica, Arial, sans-serif;
+$font-secondary-assistant: 'VT323', monospace;
+
+    // Weights
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+
+// Fonts implementations
+
+    // Headers
+$font-headers: $font-secondary;
+$font-headers--variation: $font-primary-assistant;
+
+    // Paragraphs
+$font-p-main: $font-primary;
+$font-p-main-bigger: $font-primary-assistant;
+$font-p-fixed: $font-secondary;
+$font-p-fixed-small: $font-primary;
+$font-title: $font-secondary;
+$font-title-variation: $font-secondary-assistant;
+
+    // Buttons & Links
+$font-btn-primary: $font-primary;
+$font-btn-secondary: $font-secondary;
+
+
+
+
+// Mediaqueries
+$bp-small: 24rem; // 384px 
+$bp-lowermedium: 37rem; // 592px
+$bp-medium: 48rem; // 768px
+$bp-uppermedium: 60rem; // 960px
+$bp-large: 90rem; // 1440px
+$bp-xlarge: 120rem; // 1920px
