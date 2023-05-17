@@ -1,0 +1,17 @@
+@import '../../scss/sass-variables';
+
+.topbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   color: $color-red;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: $font-weight-bold;
+   
+}
+
+
+
