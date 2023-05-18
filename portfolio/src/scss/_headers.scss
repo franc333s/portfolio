@@ -1,0 +1,30 @@
+@import './mixins';
+@import './sass-variables';
+
+
+
+.hero__title {
+    font-family: $font-primary-assistant;
+    font-weight: $font-weight-regular;
+    font-size: 4.4rem;
+
+
+    @include mq($bp-medium) {
+        font-size: 6.8rem;
+     }
+  
+     @include mq($bp-large) {
+        font-size: 10rem;
+     }
+  
+     @include mq($bp-xlarge) {
+        font-size: 14rem;
+     }
+}
+
+.portfolio__header {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: $font-weight-regular;
+    text-align: center;
+}

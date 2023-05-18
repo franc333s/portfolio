@@ -1,0 +1,73 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+
+.project-block {
+    padding-bottom: 16rem;
+
+    &__project-title,
+    &__project-role {
+        color: $color-black;
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__project- {
+
+        &title {
+            font-size: 6.8rem;
+
+            transition: 0.5s all ease-in-out;
+
+            &:hover {
+                background-color: transparent;
+                box-shadow: none;
+                text-shadow: 0 0 1.2rem $color-blue;
+                cursor: pointer;
+            }
+
+            @include mq($bp-medium) {
+                font-size: 12rem;
+            }
+
+            @include mq($bp-large) {
+                font-size: 13.6rem;
+            }
+
+            @include mq($bp-xlarge) {
+                font-size: 18rem;
+            }
+        }
+
+        &role {
+            font-weight: $font-weight-bold;
+            font-size: 2rem;
+            padding-bottom: 1.2rem;
+
+        }
+
+
+        &desc {
+            text-align: center;
+            font-size: 2rem;
+
+
+            @include mq($bp-medium) {
+                padding: 0 10rem;
+            }
+
+            @include mq($bp-large) {
+                padding: 0 20rem;
+            }
+
+            @include mq($bp-xlarge) {
+                padding: 0 30rem;
+            }
+
+        }
+    
+
+    }
+    
+}

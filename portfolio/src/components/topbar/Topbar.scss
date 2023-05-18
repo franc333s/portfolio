@@ -1,4 +1,6 @@
 @import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
 
 .topbar {
    position: fixed;
@@ -11,6 +13,51 @@
    text-transform: uppercase;
    font-weight: $font-weight-bold;
    
+
+   @include mq($bp-medium) {
+      display: grid;
+      grid-template-columns: 2.5fr 1fr;
+      gap: 4rem;
+
+      padding: 3.2rem;
+   }
+
+   @include mq($bp-large) {
+      padding: 3.2rem 4.8rem;
+   }
+
+   @include mq($bp-xlarge) {
+      padding: 3.2rem 6rem;
+   }
+
+   &__home {
+      transition: 0.4s all ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+         background-color: transparent;
+         color: transparent;
+         box-shadow: none;
+         text-shadow: 0 0 5px $color-red;
+     }
+   }
+
+   &__nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      &__item {
+         transition: 0.4s all ease-in-out;
+         cursor: pointer;
+   
+         &:hover {
+            background-color: transparent;
+            color: transparent;
+            box-shadow: none;
+            text-shadow: 0 0 5px $color-red;
+        }
+      }
+   }
 }
 
 

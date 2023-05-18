@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Crude",
+      "slug": "crude",
+      "typeOfWork": "UX/UI + Frontend Dev",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 2,
+      "title": "Cuatro Cuatros",
+      "slug": "cuatro-cuatros",
+      "typeOfWork": "Frontend Dev",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 3,
+      "title": "Portfolio",
+      "slug": "porfolio",
+      "typeOfWork": "UX/UI + Frontend Dev",
+      "description": "As my third project for the postgraduate course I attended at ESAT, I designed and programmed this website. Quite a challange since this was the first project I developed with React."
+    },
+    {
+      "id": 4,
+      "title": "About me",
+      "slug": "about-me",
+      "typeOfWork": "UX/UI + Frontend Dev",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 5,
+      "title": "Alutec",
+      "slug": "alutec",
+      "typeOfWork": "UI Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+  
