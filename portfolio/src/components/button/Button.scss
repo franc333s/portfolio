@@ -1,0 +1,74 @@
+@import '../../scss/mixins';
+@import '../../scss/sass-variables';
+
+
+.btn {
+    &__primary,
+    &__secondary {
+        font-family: $font-btn-secondary;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+
+        border-radius: 4rem;
+        padding: .8rem 0;
+        width: 100%;
+
+        transition: 0.4s all ease-in-out;
+        cursor: pointer;
+
+        @include mq($bp-medium) {
+            width: auto;
+            padding: .8rem 3.2rem;
+
+         }
+
+
+    }
+
+    &__primary {
+        background-color: $color-bg-green;
+
+        &:hover {
+            color: $color-green;
+            background-color: $color-bg-blue;
+            box-shadow: 0 0 3.2rem $color-bg-green;
+        }
+
+    }
+
+    &__secondary {
+        border: 2px solid $color-bg-blue;
+
+
+
+
+        &:hover {
+            color: $color-green;
+            background-color: $color-bg-blue;
+            box-shadow: 0 0 3.2rem $color-bg-green;
+        }
+
+    }
+    
+
+    &__terciary {
+        font-family: $font-btn-primary;
+        font-weight: $font-weight-bold;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+
+        transition: 0.4s all ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+        
+            background-color: transparent;
+            color: transparent;
+            box-shadow: none;
+            text-shadow: 0 0 5px $color-blue;
+
+        }
+    }
+}

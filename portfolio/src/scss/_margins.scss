@@ -6,7 +6,8 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+Link {
     margin: 0;
     padding: 0;
 }
@@ -31,6 +32,20 @@ a {
 
 
 }
+.hero {
+    padding-top: 36rem;
+    padding-bottom: 4rem;
+
+    @include mq($bp-large) {
+        padding-top: 40rem;
+    }
+
+    @include mq($bp-xlarge) {
+        padding-top: 24rem;
+    }
+
+}
+
 
 .portfolio {
     padding-top: 18.4rem;

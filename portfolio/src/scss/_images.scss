@@ -1,0 +1,15 @@
+@import './mixins';
+@import './sass-variables';
+
+
+
+.hero__image {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.6rem;
+
+    @include mq($bp-medium) {
+        border-radius: 2.4rem;
+    }
+}

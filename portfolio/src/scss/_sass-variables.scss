@@ -59,3 +59,20 @@ $bp-medium: 48rem; // 768px
 $bp-uppermedium: 60rem; // 960px
 $bp-large: 90rem; // 1440px
 $bp-xlarge: 120rem; // 1920px
+
+
+// Variables for @each / @for / etc
+
+    // Maps
+$map-colors: (
+    "white": $color-white,
+    "off-white": $color-off-white,
+    "red": $color-red,
+    "blue": $color-blue,
+    "green": $color-green,
+    "gray": $color-gray,
+    "black": $color-black
+);
+
+    // Columns width
+$full-width: 8;

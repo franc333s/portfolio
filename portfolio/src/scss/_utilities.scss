@@ -1,3 +1,15 @@
 .justify-self--end {
     justify-self: end;
 }
+
+
+// Loop for text color and background colors
+@each $color, $i in $map-colors {
+    .text-color-#{$color} {
+        color: $i;
+    }
+    
+    .bg-color-#{$color} {
+        background-color: $i;
+    } 
+}
