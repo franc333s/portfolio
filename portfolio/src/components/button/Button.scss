@@ -6,7 +6,6 @@
     &__primary,
     &__secondary {
         font-family: $font-btn-secondary;
-        font-size: 3.2rem;
         text-transform: uppercase;
         text-align: center;
         display: inline-block;
@@ -29,6 +28,7 @@
 
     &__primary {
         background-color: $color-bg-green;
+        font-size: 3.2rem;
 
         &:hover {
             color: $color-green;
@@ -40,6 +40,7 @@
 
     &__secondary {
         border: 2px solid $color-bg-blue;
+        font-size: 2.8rem;
 
 
 

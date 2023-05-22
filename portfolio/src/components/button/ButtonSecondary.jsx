@@ -3,10 +3,14 @@ import "./Button.scss";
 
 
 
-const ButtonSecondary = ({ to, text }) => {
-  return (
+const ButtonSecondary = ({ to, text, openInNewTab }) => {
 
-    <Link className="btn__secondary" to={to}>{text}</Link>
+	const linkProps = openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+	
+	return (
+
+
+	<Link className="btn__secondary" to={to} {...linkProps}>{text}</Link>
 
   );
 };

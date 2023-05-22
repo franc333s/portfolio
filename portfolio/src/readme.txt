@@ -10,8 +10,11 @@ Background: .bg-color-black
 
 
 
-## FOR
+## FOR - revisar que no esta ja
 To create classes that customize the width of a column, a @for loop has been created in utilities.scss and a variable in sass-variables.scss.
 
 Example of class:
 .column-width--1of8
+
+    // Columns width
+$parts: 8;

@@ -7,6 +7,9 @@ $color-green: hsl(81 100% 69%); // #C9FF63
 $color-gray: hsl(36 16% 93%); // #F0EEEA
 $color-black: hsl(0 0% 6%); // #101010
 
+//Transparencies
+$color-off-white-trans: hsla(36, 26%, 96%, 0.8); // #F8F6F3
+
 
 // Color implementation
 $color-bg-white: $color-white;
@@ -74,5 +77,5 @@ $map-colors: (
     "black": $color-black
 );
 
-    // Columns width
-$full-width: 8;
+
+

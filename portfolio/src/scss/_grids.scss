@@ -1,0 +1,75 @@
+@import './mixins';
+@import './sass-variables';
+
+
+
+.about-section {
+
+    &__text {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6rem;
+        padding-top: 3.6rem;
+
+        @include mq($bp-uppermedium) {
+            grid-template-columns: 1fr 1fr;
+            padding-top: 6rem;
+        }
+
+        &__top {
+            padding-right: 0;
+
+            @include mq($bp-medium) {
+                padding-right: 16rem;
+            }
+
+            @include mq($bp-uppermedium) {
+                padding-right: 0;
+            }
+        }
+
+        &__bottom {
+            padding-left: 0;
+
+            @include mq($bp-medium) {
+                padding-left: 16rem;
+            }
+
+            @include mq($bp-uppermedium) {
+                padding-left: 0;
+            }
+
+            & > p {
+                padding-top: 6rem;
+                padding-bottom: 10rem;
+            }
+
+        }
+    }
+
+    &__socials {
+
+        &__text {
+            padding-top: 10rem;
+            padding-bottom: 3.6rem;
+
+            @include mq($bp-large) {
+                padding-bottom: 6rem;
+            }
+        }
+
+        &__btn {
+
+            @include mq($bp-medium) {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+            }
+            
+
+
+        }
+    }
+}
+
+

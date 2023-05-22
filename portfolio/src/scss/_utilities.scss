@@ -1,5 +1,29 @@
+@import '../scss/mixins';
+@import '../scss/sass-variables';
+
 .justify-self--end {
     justify-self: end;
+}
+
+
+.accent-text {
+    color: $color-black;
+    font-family: $font-secondary-assistant;
+    font-size: 9.2rem;
+    text-transform: uppercase;
+
+    @include mq($bp-medium) {
+        font-size: 16rem;
+    }
+
+    @include mq($bp-large) {
+        font-size: 18rem;
+    }
+
+    @include mq($bp-xlarge) {
+        font-size: 22rem;
+    }
+
 }
 
 
@@ -13,3 +37,5 @@
         background-color: $i;
     } 
 }
+
+

@@ -12,6 +12,7 @@
    font-size: 2rem;
    text-transform: uppercase;
    font-weight: $font-weight-bold;
+   background-color: $color-off-white-trans;
    
 
    @include mq($bp-medium) {
