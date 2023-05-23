@@ -1,16 +1,10 @@
 import ButtonPrimary from "../components/button/ButtonPrimary";
 import ButtonSecondary from "../components/button/ButtonSecondary";
 import ButtonTerciary from "../components/button/ButtonTerciary";
-import React, { useEffect } from "react";
 
 
 
 export default function Home() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-    
 
     return (
         <>

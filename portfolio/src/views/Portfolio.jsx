@@ -1,13 +1,8 @@
 import ProjectBlock from '../components/projectBlock/ProjectBlock';
 import projectData from '../../projectsData.json'
-import React, { useEffect } from "react";
 
 
 export default function Portfolio() {
-
-  useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
 
     return (
         <>
