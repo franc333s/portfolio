@@ -13,10 +13,10 @@ function App() {
 		<>
 			<header>
 				<Topbar />
-        		{/* <h1>This line shows App.jsx</h1> */}
 			</header>
 
 			<main className="main">
+
       			<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/portfolio' element={<Portfolio />} />

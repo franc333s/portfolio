@@ -9,8 +9,9 @@
 .accent-text {
     color: $color-black;
     font-family: $font-secondary-assistant;
-    font-size: 9.2rem;
+    font-size: 8.4rem;
     text-transform: uppercase;
+    line-height: 80%;
 
     @include mq($bp-medium) {
         font-size: 16rem;
@@ -24,6 +25,11 @@
         font-size: 22rem;
     }
 
+}
+
+.text-lowercase-reg {
+    text-transform: lowercase;
+    font-weight: $font-weight-regular;
 }
 
 

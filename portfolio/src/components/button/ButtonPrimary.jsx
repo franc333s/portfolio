@@ -7,8 +7,9 @@ const ButtonPrimary = ({ to, text, openInNewTab }) => {
 	const linkProps = openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {};
 	
 	return (
-	  
-	  <Link  className="btn__primary" to={to} {...linkProps}>{text}</Link>
+		<>
+	  		<Link  className="btn__primary" to={to} {...linkProps}>{text}</Link>
+	  	</>
 
 	);
   };
