@@ -8,6 +8,8 @@ export default function Home() {
 
     return (
         <>
+        <main className="main--padding">
+            
             <section className="intro">
                 <div className="intro__hero">
                     <h1 className="intro__hero__title">Frontend Designer 
@@ -77,6 +79,8 @@ export default function Home() {
                 </div>
                 <ButtonPrimary to="mailto:marinafase@gmail.com" text="Email me"/>
             </section>
+
+        </main>
          
         </>
     )

@@ -1,0 +1,104 @@
+@import '../../scss/sass-variables';
+@import '../../scss/typography';
+@import '../../scss/mixins';
+
+
+.projects-nav {
+    margin-top: 10rem;
+    // eliminar lo de arriba
+    padding: 4rem 1.6rem;
+    color: $color-red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: $color-bg-gray;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+
+    @include mq($bp-medium) {
+        padding: 8rem 3.2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include mq($bp-large) {
+        padding: 10rem 4.8rem;
+    }
+
+    @include mq($bp-xlarge) {
+        padding: 10rem 6rem;
+    }
+
+    &__item svg {
+        height: 1.6rem;
+        width: 3.2rem;
+    }
+
+    &__item--prev,
+    &__item--next {
+        font-weight: $font-weight-bold;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__item--all {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item--next {
+        justify-content: flex-end;
+    }
+
+    &__item--prev,
+    &__item--all,
+    &__item--next {
+        transition: 0.4s all ease-in-out;
+        cursor: pointer;
+  
+        &:hover {
+           background-color: transparent;
+           color: transparent;
+           box-shadow: none;
+           text-shadow: 0 0 5px $color-red;
+        }
+    }
+
+    &__item--prev svg {
+        animation: slideToLeft 1s ease-in-out infinite;
+    }
+
+    &__item--next svg {
+        animation: slideToRight 1s ease-in-out infinite;
+    }
+}
+
+@keyframes slideToLeft {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(-1rem, 0);
+    }
+  }
+
+@keyframes slideToRight {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(1rem, 0);
+    }
+  }
+
+
+
+

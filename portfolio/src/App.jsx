@@ -15,14 +15,11 @@ function App() {
 				<Topbar />
 			</header>
 
-			<main className="main">
-
-      			<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/portfolio' element={<Portfolio />} />
-					<Route path='/portfolio/:projectName' element={<Project />} />
-				</Routes>
-			</main>
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/portfolio' element={<Portfolio />} />
+				<Route path='/portfolio/:projectName' element={<Project />} />
+			</Routes>
 
 			<footer>
 				<Footer />

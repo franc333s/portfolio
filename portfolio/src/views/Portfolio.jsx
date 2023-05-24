@@ -6,10 +6,8 @@ export default function Portfolio() {
 
     return (
         <>
-
-        <div className='portfolio'>
+        <main className='portfolio main--padding'>
             <h1 className='portfolio__header'>Latest Dev / Design projects</h1>
-
             <div className="portfolio__project">
               {projectData.map((project) => (
                 <ProjectBlock
@@ -21,7 +19,7 @@ export default function Portfolio() {
                   />
               ))}
             </div>
-          </div>
+          </main>
         </>
     )
     

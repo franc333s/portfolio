@@ -4,7 +4,11 @@
       "title": "Crude",
       "slug": "crude",
       "typeOfWork": "UX/UI + Frontend Dev",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Simply dummy text of the printing and typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Simply dummy text of the printing and typesetting industry.",
+      "projectLink": "https://esatdev.com/2022/marina/crude/",
+      "imagePath": "./public/images/projects/img.jpg",
+      "altText": "Vista del inicio de la web Crude"
+    
     },
     {
       "id": 2,
@@ -18,7 +22,7 @@
       "title": "Portfolio",
       "slug": "porfolio",
       "typeOfWork": "UX/UI + Frontend Dev",
-      "description": "As my third project for the postgraduate course I attended at ESAT, I designed and programmed this website. Quite a challange since this was the first project I developed with React."
+      "description": "As my third project for the postgraduate course I attended at ESAT, I designed and programmed this website. Quite a challange since this is the first project I developed in React."
     },
     {
       "id": 4,
