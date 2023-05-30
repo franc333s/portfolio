@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import ArrowLeft from "../arrows/ArrowLeft";
-import ArrowRight from "../arrows/ArrowRight";
+import ArrowLeft from "../../arrows/ArrowLeft";
+import ArrowRight from "../../arrows/ArrowRight";
 import "./ProjectFooterNav.scss";
 
 

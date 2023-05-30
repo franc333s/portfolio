@@ -1,6 +1,6 @@
-@import '../../scss/sass-variables';
-@import '../../scss/typography';
-@import '../../scss/mixins';
+@import '../../../scss/sass-variables';
+@import '../../../scss/typography';
+@import '../../../scss/mixins';
 
 
 .projects-nav {
@@ -33,8 +33,10 @@
     }
 
     &__item svg {
+        padding-top: 1px;
         height: 1.6rem;
-        width: 3.2rem;
+        width: 1.6rem;
+        fill: $color-bg-red;
     }
 
     &__item--prev,
@@ -42,7 +44,7 @@
         font-weight: $font-weight-bold;
         display: flex;
         align-items: center;
-        gap: 1.2rem;
+        gap: .8rem;
     }
 
     &__item--all {
@@ -69,11 +71,11 @@
     }
 
     &__item--prev svg {
-        animation: slideToLeft 1s ease-in-out infinite;
+        // animation: slideToLeft 1s ease-in-out infinite;
     }
 
     &__item--next svg {
-        animation: slideToRight 1s ease-in-out infinite;
+        // animation: slideToRight 1s ease-in-out infinite;
     }
 }
 

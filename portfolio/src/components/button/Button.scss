@@ -3,6 +3,7 @@
 
 
 .btn {
+
     &__primary,
     &__secondary {
         font-family: $font-btn-secondary;
@@ -21,10 +22,7 @@
         @include mq($bp-lowermedium) {
             width: auto;
             padding: 2rem 3.2rem;
-
-         }
-
-
+        }
     }
 
     &__primary {
@@ -36,41 +34,34 @@
             background-color: $color-bg-blue;
             box-shadow: 0 0 3.2rem $color-bg-green;
         }
-
     }
 
     &__secondary {
         border: 2px solid $color-bg-blue;
         font-size: 2.8rem;
 
-
-
-
         &:hover {
             color: $color-green;
             background-color: $color-bg-blue;
             box-shadow: 0 0 3.2rem $color-bg-green;
         }
-
     }
-    
 
     &__terciary {
         font-family: $font-btn-primary;
         font-weight: $font-weight-bold;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         text-transform: uppercase;
+        white-space: nowrap;
 
         transition: 0.4s all ease-in-out;
         cursor: pointer;
 
         &:hover {
-        
             background-color: transparent;
             color: transparent;
             box-shadow: none;
             text-shadow: 0 0 5px $color-blue;
-
         }
     }
 }

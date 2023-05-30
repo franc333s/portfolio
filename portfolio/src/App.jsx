@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 
 import Home from "./views/Home";
 import Portfolio from "./views/Portfolio";
-import Project from "./views/Project";
+import SingleProject from "./views/SingleProject";
 
 function App() {
 	return (
@@ -18,7 +18,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/portfolio' element={<Portfolio />} />
-				<Route path='/portfolio/:projectName' element={<Project />} />
+				<Route path='/portfolio/:slug' element={<SingleProject />} />
 			</Routes>
 
 			<footer>

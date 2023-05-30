@@ -1,16 +1,20 @@
-import { Link } from "react-router-dom";
+import ButtonTerciary from '../../button/ButtonTerciary';
 import './ProjectHero.scss';
 
 
-const ProjectHero = ({ title, linkToSite, imagePath }) => {
+const ProjectHero = ({ title, linkToSite, imagePathMobile, imagePathDesktop, altText }) => {
 
     return (
-  
-      <div className="project-hero">
-        <h1 className="project-hero__title">{title}</h1>
-        <Link to={linkToSite} className=''>Visit Website</Link>
-        <img src={imagePath} alt={altText} />
-      </div>
+      <>
+        <div className="project-hero">
+          <div className="project-hero__flex">
+            <h1 className="project-hero__title h2">{title}</h1>
+            <ButtonTerciary to={linkToSite} text="Visit Website"/>
+          </div>
+          <img className="project-hero__image project-hero__image--mobile" src={imagePathMobile} alt={altText}/>
+          <img className="project-hero__image project-hero__image--desktop" src={imagePathDesktop} alt={altText}/>
+        </div>
+      </>
     );
   };
   

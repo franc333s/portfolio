@@ -1,0 +1,84 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+
+.error404 {
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include mq($bp-medium) {
+        height: calc(100vh - 5.7rem);
+
+    }
+
+    &__intro {
+        font-family: $font-secondary;
+        font-weight: $font-weight-bold;
+        font-size: 4rem;
+
+        @include mq($bp-medium) {
+            font-size: 4.8rem;
+        }
+    }
+
+    &__404 {
+        color: $color-black;
+        font-family: $font-secondary;
+        font-weight: $font-weight-bold;
+        font-size: 20rem;
+        line-height: 90%;
+        display: flex;
+
+        @include mq($bp-lowermedium) {
+            font-size: 36rem;
+        }
+
+        @include mq($bp-medium) {
+            font-size: 40rem;
+        }
+    
+        @include mq($bp-large) {
+            font-size: 56rem;
+            line-height: 85%;
+        }
+    
+        @include mq($bp-xlarge) {
+            font-size: 56rem;
+        }
+
+        &__item {
+            transition: 3s all ease-in-out;
+
+            &:hover {
+                color: $color-green;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+    }
+
+    &__text {
+        font-family: $font-primary-assistant;
+        font-size: 2rem;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6rem;
+        width: 100%;
+
+        @include mq($bp-small) {
+            width: 34rem;
+        }
+
+        @include mq($bp-lowermedium) {
+            width: auto;
+        }
+    }
+}
+

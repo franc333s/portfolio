@@ -1,6 +1,11 @@
 @import '../scss/mixins';
 @import '../scss/sass-variables';
 
+
+.justify-self--center {
+    justify-self: center;
+}
+
 .justify-self--end {
     justify-self: end;
 }

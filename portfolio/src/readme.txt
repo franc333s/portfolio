@@ -18,3 +18,5 @@ Example of class:
 
     // Columns width
 $parts: 8;
+
+
