@@ -13,6 +13,8 @@
    text-transform: uppercase;
    font-weight: $font-weight-bold;
    background-color: $color-off-white-trans;
+
+   z-index: 3;
    
 
    @include mq($bp-medium) {

@@ -7,6 +7,8 @@ import Footer from "./components/footer/Footer";
 import Home from "./views/Home";
 import Portfolio from "./views/Portfolio";
 import SingleProject from "./views/SingleProject";
+import Contact from "./views/Contact";
+
 
 function App() {
 	return (
@@ -19,6 +21,8 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/portfolio' element={<Portfolio />} />
 				<Route path='/portfolio/:slug' element={<SingleProject />} />
+				<Route path='/contact' element={<Contact />}/>
+
 			</Routes>
 
 			<footer>

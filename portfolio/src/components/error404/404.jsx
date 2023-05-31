@@ -12,7 +12,7 @@ function Error404() {
                 <p className='error404__404__item'>0</p>
                 <p className='error404__404__item'>4</p>
             </div>
-            <h1 className='error404__text'>This page could not be found</h1>
+            <h1 className='error404__text'>This project doesn't existe... yet</h1>
             <div className='error404__button'>
                 <ButtonPrimary to="/portfolio" text="Return to portfolio"/>
             </div>
