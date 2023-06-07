@@ -9,7 +9,7 @@ const ProjectHero = ({ title, linkToSite, imagePathMobile, imagePathDesktop, alt
         <div className="project-hero">
           <div className="project-hero__flex">
             <h1 className="project-hero__title h2">{title}</h1>
-            <ButtonTerciary to={linkToSite} text="Visit Website"/>
+            <ButtonTerciary to={linkToSite} text="Visit Website" openInNewTab={true}/>
           </div>
           <img className="project-hero__image project-hero__image--mobile" src={imagePathMobile} alt={altText}/>
           <img className="project-hero__image project-hero__image--desktop" src={imagePathDesktop} alt={altText}/>

@@ -53,6 +53,16 @@ $font-btn-primary: $font-primary;
 $font-btn-secondary: $font-secondary;
 
 
+    // Font sizes
+    // Hero title
+$hero-font-size-sm: clamp(3.52rem, 4.56vw + 1.74rem, 10.5rem);
+$hero-font-size-base: clamp(4.4rem, 6.27vw + 1.95rem, 14rem);
+$hero-font-size-md: clamp(5.5rem, 8.6vw + 2.14rem, 18.66rem);
+$hero-font-size-lg: clamp(6.88rem, 11.77vw + 2.29rem, 24.88rem);
+$hero-font-size-xl: clamp(8.59rem, 16.06vw + 2.33rem, 33.16rem);
+$hero-font-size-xxl: clamp(10.74rem, 21.87vw + 2.21rem, 44.2rem);
+$hero-font-size-xxxl: clamp(13.43rem, 29.73vw + 1.83rem, 58.92rem);
+
 
 
 // Mediaqueries

@@ -21,7 +21,7 @@ const SingleProject = () => {
       </>
     )}
   
-    // const { title, projectLink, imagePathMobile, imagePathDesktop, altText } = project;
+    // const { title, linkToSite, imagePathMobile, imagePathDesktop, altText } = project;
 
     const projects = [
         { slug: "crude", title: "CRUDE" },
@@ -33,12 +33,12 @@ const SingleProject = () => {
     
         return (
             <div>
-                <main className='main--padding'>
+                <main className="vertical-padding">
 
                     <div>
                         <ProjectHero
                             title={project.title}
-                            projectLink={project.projectLink}
+                            linkToSite={project.linkToSite}
                             imagePathMobile={project.imagePathMobile}
                             imagePathDesktop={project.imagePathDesktop}
                             altText={project.altText}

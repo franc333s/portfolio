@@ -6,8 +6,8 @@ export default function Contact() {
     return (
         <>
 
-    <div className="contact-page">
-        <div className="contact">
+    <div className="">
+        <div className="vertical-padding contact">
             
             <h1 className="h2">Say hey!</h1>
             <p className="p--main contact__text">Currently based in València (SP), I am available to work in office or remotely. If you want to <strong>get in touch, simply drop me a line at</strong>:</p>
