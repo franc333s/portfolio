@@ -11,7 +11,7 @@ const Home = () => {
          <main className="vertical-padding">
 
             <section className="home-hero">
-                <div>
+                <div className="home-hero__header">
                     <h1>
                         <div>Frontend Designer</div> 
                         <div>with a background</div>

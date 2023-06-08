@@ -3,62 +3,58 @@
 
 
 .topbar {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: z(top);
 
-   color: $color-red;
-   font-family: $font-secondary;
-   font-size: 2rem;
-   text-transform: uppercase;
-   font-weight: $font-weight-bold;
-   background-color: $color-off-white-trans;
+    color: $color-red;
+    font-family: $font-secondary;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    background-color: $color-bg-off-white-trans;
 
-   z-index: z(top);
-
-   padding-left: $vertical-padding-base;
-   padding-right: $vertical-padding-base;
-
-   padding-top: 3.2rem;
-   padding-bottom: 3.2rem;
-   
-
-   @include mq($bp-medium) {
-      display: grid;
-      grid-template-columns: 2.5fr 1fr;
-      gap: 4rem;
-   }
+    padding-left: $vertical-padding-base;
+    padding-right: $vertical-padding-base;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
 
 
-   &__home {
-      transition: $hover-transition-btn;
-      cursor: pointer;
+    @include mq($bp-medium) {
+            display: grid;
+            grid-template-columns: 2.5fr 1.2fr;
+    }
 
-      &:hover {
-         background-color: transparent;
-         color: transparent;
-         box-shadow: none;
-         text-shadow: $text-shadow-red;
-     }
-   }
+    &__home {
+        transition: $hover-transition-btn;
+        cursor: pointer;
 
-   &__nav {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      &__item {
-         transition: $hover-transition-btn;
-         cursor: pointer;
-   
-         &:hover {
+        &:hover {
             background-color: transparent;
             color: transparent;
             box-shadow: none;
-            text-shadow: 0 0 5px $color-red;
+            text-shadow: $text-shadow-red;
         }
-      }
-   }
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__item {
+            transition: $hover-transition-btn;
+            cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+                color: transparent;
+                box-shadow: none;
+                text-shadow: $text-shadow-red;
+            }
+        }
+    }
 }
 
 

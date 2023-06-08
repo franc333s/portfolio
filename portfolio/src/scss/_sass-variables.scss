@@ -10,6 +10,7 @@ $color-black: hsl(0 0% 6%); // #101010
 
 //Transparencies
 $color-off-white-trans: hsla(36, 26%, 96%, 0.8); // #F8F6F3
+$color-gray-trans: hsla(36, 16%, 93%, 0.95); // #F8F6F3
 
 
 // Color implementation
@@ -20,6 +21,10 @@ $color-bg-blue: $color-blue;
 $color-bg-green: $color-green;
 $color-bg-gray: $color-gray;
 $color-bg-black: $color-black;
+
+//Transparencies color implementation
+$color-bg-off-white-trans: $color-off-white-trans; 
+$color-bg-gray-trans: $color-gray-trans; 
 
 
 $color-bg-gray-darker: darken($color-bg-gray, 8%);
@@ -72,12 +77,23 @@ $h2-font-size-base: clamp(6.8rem, 7.32vw + 3.95rem, 18rem);
 $accent-text-font-size-base: clamp(8.4rem, 8.89vw + 4.93rem, 22rem);
     // Project intro text description
 $project-intro-font-size-base: clamp(3.6rem, 2.09vw + 2.78rem, 6.8rem);
+    // 404 font size
+$error404-font-size-base: clamp(12.5rem, 23.53vw + 6.76rem, 35rem);
+
+
 
     // Buttons
-$button-primary-font-size: 2.8rem;
-$button-secondary-font-size: 2.8rem;
-$button-terciary-font-size: 2.4rem;
-$button-project-nav-font-size: 2rem;
+
+$button-font-size-sm: 2rem;
+$button-font-size-md: 2.4rem;
+$button-font-size-lg: 2.8rem;
+
+    // Buttons sizes implementations
+$button-primary-font-size: $button-font-size-lg;
+$button-secondary-font-size: $button-font-size-lg;
+$button-terciary-font-size: $button-font-size-md;
+$button-topbar-font-size: $button-font-size-sm;
+$button-project-nav-font-size: $button-font-size-sm;
 
 
 
@@ -89,7 +105,7 @@ $vertical-padding-base: clamp(1.6rem, 2.88vw + 0.48rem, 6rem);
     // Portfolio paddings
 $padding-top-portfolio-base: clamp(11.5rem, -2.88vw + 12.2rem, 8.75rem);
     // Project paddings
-$padding-top-project-base: clamp(5.88rem, 3.79vw + 4.95rem, 9.5rem);
+$padding-top-project-base: clamp(6.75rem, 3.92vw + 5.79rem, 10.5rem);
 
 
 
@@ -129,7 +145,7 @@ $map-layers: (
 }
 
 
-// Efects
+// Effects
 
 $hover-transition-btn: 0.4s all ease-in-out;
 $text-shadow-red: 0 0 5px $color-red;

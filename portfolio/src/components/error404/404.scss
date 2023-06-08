@@ -12,7 +12,6 @@
 
     @include mq($bp-medium) {
         height: calc(100vh - 5.7rem);
-
     }
 
     &__intro {
@@ -29,26 +28,9 @@
         color: $color-black;
         font-family: $font-secondary;
         font-weight: $font-weight-bold;
-        font-size: 20rem;
+        font-size: $error404-font-size-base;
         line-height: 90%;
         display: flex;
-
-        @include mq($bp-lowermedium) {
-            font-size: 36rem;
-        }
-
-        @include mq($bp-medium) {
-            font-size: 40rem;
-        }
-    
-        @include mq($bp-large) {
-            font-size: 56rem;
-            line-height: 85%;
-        }
-    
-        @include mq($bp-xlarge) {
-            font-size: 56rem;
-        }
 
         &__item {
             transition: 3s all ease-in-out;
@@ -71,6 +53,7 @@
         align-items: center;
         padding-top: 6rem;
         width: 100%;
+        margin-bottom: 8rem;
 
         @include mq($bp-small) {
             width: 34rem;
@@ -78,6 +61,7 @@
 
         @include mq($bp-lowermedium) {
             width: auto;
+            margin-bottom: 6rem;
         }
     }
 }

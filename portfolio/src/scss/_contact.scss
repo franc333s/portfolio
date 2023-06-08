@@ -5,32 +5,16 @@
 
 
 .contact {
-    // padding: 24rem 1.6rem 10rem;
-
-    // @include mq($bp-medium) {
-    //     padding: 32rem 3.2rem 8rem;
-
-    // }
-
-    // @include mq($bp-large) {
-    //     padding: 26rem 4.8rem 6rem;
-
-    // }
-
-    // @include mq($bp-xlarge) {
-    //     padding: 26rem 4.8rem 6rem;
-
-    // }
+    padding: 24rem 0 0;
 
     @include mq($bp-uppermedium) {
-        //height: calc(100vh - 23.1rem);
+        // height: calc(100vh - 23.1rem);
 
     }
 
-
-    &__text {
-        padding-top: 2rem;
-        padding-bottom: 2.8rem;
+    &__desc {
+        padding-top: 2.8rem;
+        padding-bottom: 4.4rem;
 
         @include mq($bp-medium) {
             width: 70%;
@@ -39,62 +23,53 @@
         @include mq($bp-large) {
             width: 50%;
         }
-
     }
 
-    &__link {
+
+    &__email-container {
+        padding-bottom: 8rem;
+
+        @include mq($bp-large) {
+            padding-bottom: 10rem;
+        }
+
+        @include mq($bp-xlarge) {
+            padding-bottom: 8rem;
+        }
+    }
+
+    &__link__item {
         font-family: $font-btn-primary;
         font-weight: $font-weight-bold;
-        font-size: 2.4rem;
+        font-size: $button-font-size-sm;
         text-transform: uppercase;
         white-space: nowrap;
 
-        transition: 0.4s all ease-in-out;
+        transition: $hover-transition-btn;
         cursor: pointer;
 
         &:hover {
             text-transform: lowercase;
         }
     }
-    & svg {
-        padding-top: 2px;
-        margin-right: .4rem;
-        height: 2rem;
-        width: 2rem;
-        fill: $color-bg-blue;
-    }
 
     &__profiles {
         background-color: $color-bg-green;
-        padding: 2.8rem 1.6rem 6rem;
-
-        @include mq($bp-medium) {
-            padding: 4rem 3.2rem 8rem;
-
-        }
-
-        @include mq($bp-large) {
-            padding: 6rem 4.8rem 10rem;
-
-        }
+        padding-left: $vertical-padding-base;
+        padding-right: $vertical-padding-base;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
 
         @include mq($bp-xlarge) {
-            padding: 8rem 6rem;
-
-        }
-
-        & svg {
-            padding-top: 2px;
-            margin-right: .4rem;
-            height: 2rem;
-            width: 2rem;
-            fill: $color-bg-blue;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
         }
 
         &__grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.2rem;
+            padding-top: 2.8rem;
 
             @include mq($bp-medium) {
                display: grid;
@@ -106,7 +81,13 @@
                 gap: 4rem;
             }
         }
-    
     }
 
+    & svg {
+        padding-top: 2px;
+        margin-right: .4rem;
+        height: 1.6rem;
+        width: 1.6rem;
+        fill: $color-bg-blue;
+    }
 }

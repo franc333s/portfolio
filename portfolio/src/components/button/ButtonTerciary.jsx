@@ -12,7 +12,7 @@ const SmoothScrollButton = ({ to, text }) => {
     };
 
     return (
-        <button className="btn__terciary" onClick={handleClick}>
+        <button className="btn--terciary" onClick={handleClick}>
             {text}
         </button>
     );

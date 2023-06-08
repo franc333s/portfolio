@@ -30,9 +30,14 @@ section {
     align-items: flex-start;
     gap: 3.2rem;
 
-    @include mq($bp-lowermedium) {
+    @include mq($bp-medium) {
         height: 90vh;
     }
+
+    @include mq($bp-uppermedium) {
+        height: 90vh;
+    }
+
 
     @include mq($bp-xlarge) {
         height: 96vh;
