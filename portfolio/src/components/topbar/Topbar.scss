@@ -9,39 +9,37 @@
    width: 100%;
 
    color: $color-red;
+   font-family: $font-secondary;
    font-size: 2rem;
    text-transform: uppercase;
    font-weight: $font-weight-bold;
    background-color: $color-off-white-trans;
 
-   z-index: 3;
+   z-index: z(top);
+
+   padding-left: $vertical-padding-base;
+   padding-right: $vertical-padding-base;
+
+   padding-top: 3.2rem;
+   padding-bottom: 3.2rem;
    
 
    @include mq($bp-medium) {
       display: grid;
       grid-template-columns: 2.5fr 1fr;
       gap: 4rem;
-
-      padding: 3.2rem;
    }
 
-   @include mq($bp-large) {
-      padding: 3.2rem 4.8rem;
-   }
-
-   @include mq($bp-xlarge) {
-      padding: 3.2rem 6rem;
-   }
 
    &__home {
-      transition: 0.4s all ease-in-out;
+      transition: $hover-transition-btn;
       cursor: pointer;
 
       &:hover {
          background-color: transparent;
          color: transparent;
          box-shadow: none;
-         text-shadow: 0 0 5px $color-red;
+         text-shadow: $text-shadow-red;
      }
    }
 
@@ -50,7 +48,7 @@
       grid-template-columns: 1fr 1fr;
 
       &__item {
-         transition: 0.4s all ease-in-out;
+         transition: $hover-transition-btn;
          cursor: pointer;
    
          &:hover {

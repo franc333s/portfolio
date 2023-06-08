@@ -10,7 +10,7 @@ const ButtonSecondary = ({ to, text, openInNewTab }) => {
 	return (
 
 
-	<Link className="btn__secondary" to={to} {...linkProps}>{text}</Link>
+	<Link className="btn--secondary" to={to} {...linkProps}>{text}</Link>
 
   );
 };

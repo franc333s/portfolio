@@ -4,13 +4,15 @@
 
 
 .projects-nav {
-    margin-top: 10rem;
-    // eliminar lo de arriba
-    padding: 4rem 1.6rem;
     color: $color-red;
-    font-size: 2rem;
+    font-size: $button-project-nav-font-size;
     text-transform: uppercase;
     background-color: $color-bg-gray;
+    margin-top: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: $vertical-padding-base;
+    padding-right: $vertical-padding-base;
 
     display: flex;
     flex-direction: column;
@@ -18,18 +20,16 @@
 
 
     @include mq($bp-medium) {
-        padding: 8rem 3.2rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
     @include mq($bp-large) {
-        padding: 10rem 4.8rem;
-    }
-
-    @include mq($bp-xlarge) {
-        padding: 10rem 6rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 
     &__item svg {
@@ -59,47 +59,20 @@
     &__item--prev,
     &__item--all,
     &__item--next {
-        transition: 0.4s all ease-in-out;
+        transition: $hover-transition-btn;
         cursor: pointer;
   
         &:hover {
            background-color: transparent;
            color: transparent;
            box-shadow: none;
-           text-shadow: 0 0 5px $color-red;
+           text-shadow: $text-shadow-red;
         }
     }
 
-    &__item--prev svg {
-        // animation: slideToLeft 1s ease-in-out infinite;
-    }
-
-    &__item--next svg {
-        // animation: slideToRight 1s ease-in-out infinite;
-    }
 }
 
-@keyframes slideToLeft {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-  
-    50% {
-      transform: translate(-1rem, 0);
-    }
-  }
 
-@keyframes slideToRight {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-  
-    50% {
-      transform: translate(1rem, 0);
-    }
-  }
 
 
 

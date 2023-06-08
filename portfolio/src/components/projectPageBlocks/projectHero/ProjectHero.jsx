@@ -7,7 +7,7 @@ const ProjectHero = ({ title, linkToSite, imagePathMobile, imagePathDesktop, alt
     return (
       <>
         <div className="project-hero">
-          <div className="project-hero__flex">
+          <div className="project-hero--flex">
             <h1 className="project-hero__title h2">{title}</h1>
             <ButtonTerciary to={linkToSite} text="Visit Website" openInNewTab={true}/>
           </div>
@@ -19,3 +19,4 @@ const ProjectHero = ({ title, linkToSite, imagePathMobile, imagePathDesktop, alt
   };
   
   export default ProjectHero;
+

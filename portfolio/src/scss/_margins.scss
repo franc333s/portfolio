@@ -14,48 +14,14 @@ section {
     padding: 0;
 }
 
-.main--padding {
-    padding: 4.8rem 1.6rem;
-
-    @include mq($bp-medium) {
-        padding: 6.4rem 3.2rem;
-
-    }
-
-    @include mq($bp-large) {
-        padding: 8rem 4.8rem;
-
-    }
-
-    @include mq($bp-xlarge) {
-        padding: 9.2rem 6rem;
-
-    }
-}
-
 
 .vertical-padding {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-
-    @include mq($bp-medium) {
-        padding-left: 3.2rem;
-        padding-right: 3.2rem;
-    }
-
-    @include mq($bp-large) {
-        padding-left: 4.8rem;
-        padding-right: 4.8rem;
-    }
-
-    @include mq($bp-xlarge) {
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
+    padding-left: $vertical-padding-base;
+    padding-right: $vertical-padding-base;
 }
 
 
-.home-intro {
+.home-hero {
     height: 80vh;
 
     display: flex;
@@ -71,58 +37,115 @@ section {
     @include mq($bp-xlarge) {
         height: 96vh;
     }
+}
 
+.home-intro {
+    padding: 10rem 0;
 
-
-    &__hero {
-        // padding-top: 36rem;
-        // padding-bottom: 4rem;
-
-        @include mq($bp-large) {
-            // padding-top: 20rem;
-        }
-
-        @include mq($bp-xlarge) {
-            // padding-top: 24rem;
-        }
+    @include mq($bp-medium) {
+        padding: 10rem 0 16rem;
     }
 
-    &__desc {
-        padding: 10rem 0;
+    &__text {
+        padding-bottom: 3.6rem;
 
         @include mq($bp-medium) {
-            padding: 10rem 0 16rem;
+            padding-right: 40%;
         }
 
-        &-text {
-           padding-bottom: 3.6rem;
+        @include mq($bp-uppermedium) {
+            padding-right: 50%;
+        }
+    }
+}
 
-            @include mq($bp-medium) {
-                padding-right: 40%;
+.about-section {
+
+    &__text {
+
+        &__top {
+            padding-right: 0;
+
+            @include mq($bp-lowermedium) {
+                padding-right: 16rem;
             }
 
             @include mq($bp-uppermedium) {
-                padding-right: 50%;
+                padding-right: 0;
+            }
+        }
+
+
+        &__bottom {
+            padding-left: 0;
+
+            @include mq($bp-lowermedium) {
+                padding-left: 16rem;
+            }
+
+            @include mq($bp-uppermedium) {
+                padding-left: 0;
+                padding-top: 6rem;
+            }
+
+            & > p {
+                padding-top: 6rem;
+                padding-bottom: 10rem;
+            }
+
+        }
+    }
+
+    &__socials {
+
+        &__text {
+            padding-top: 10rem;
+            padding-bottom: 3.6rem;
+
+            @include mq($bp-large) {
+                padding-bottom: 6rem;
             }
         }
     }
 }
 
+.cards-section {
+
+    &__left {
+        padding-right: 0;
+
+        @include mq($bp-lowermedium) {
+            padding-right: 16rem;
+        }
+
+        @include mq($bp-medium) {
+            padding-right: 0;
+        }
+    }
+
+    &__right {
+        padding-left: 0;
+
+        @include mq($bp-lowermedium) {
+            padding-left: 16rem;
+        }
+
+        @include mq($bp-medium) {
+            padding-left: 0;
+            padding-top: 10rem;
+        }
+    }
+
+    & h3 {
+        padding-bottom: 2rem;
+
+    }
+}
+
+
 
 .portfolio {
-    padding-top: 18.4rem;
-
-    @include mq($bp-medium) {
-        padding-top: 16.8rem;
-    }
-
-    @include mq($bp-large) {
-        padding-top: 15.2rem;
-    }
-
-    @include mq($bp-xlarge) {
-        padding-top: 14rem;
-    }
+    padding-top: $padding-top-portfolio-base;
 
     &__header {
         padding-bottom: 4rem;
@@ -131,3 +154,8 @@ section {
 }
 
 
+
+.project {
+    padding-top: $padding-top-project-base;
+
+}

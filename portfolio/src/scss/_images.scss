@@ -8,8 +8,9 @@
     width: 100%;
     object-fit: cover;
     border-radius: 1.6rem;
+    box-shadow: $color-box-shadow-person;
 
     @include mq($bp-medium) {
-        border-radius: 2.4rem;
+        border-radius: 2rem;
     }
 }

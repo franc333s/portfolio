@@ -1,6 +1,52 @@
+@import './mixins';
+@import './sass-variables';
+
+
+h1,
+.h1 {
+    font-family: $font-primary-assistant;
+    font-weight: $font-weight-regular;
+    font-size: $hero-font-size-base;
+}
+
+h2,
+.h2 {
+    color: $color-black;
+    font-family: $font-headers;
+    font-size: $h2-font-size-base;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    line-height: 90%;
+}
+
+h3,
+.h3 {
+    color: $color-black;
+    font-family: $font-headers;
+    font-size: 3.6rem;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+}
+
+
+.portfolio__header {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: $font-weight-regular;
+    text-align: center;
+    font-size: 2rem;
+}
 
 .p--main {
     font-family: $font-p-main;
     font-size: 2rem;
     line-height: 160%;
+}
+
+.accent-text {
+    color: $color-black;
+    font-family: $font-secondary-assistant;
+    font-size: $accent-text-font-size-base;
+    text-transform: uppercase;
+    line-height: 80%;
 }

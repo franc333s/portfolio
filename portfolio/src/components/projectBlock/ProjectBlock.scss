@@ -3,7 +3,7 @@
 
 
 .project-block {
-    padding-bottom: 16rem;
+    padding-bottom: 20rem;
 
     &__project-title,
     &__project-role {
@@ -13,9 +13,9 @@
         text-align: center;
     }
 
-    &__project- {
+    &__project {
 
-        &title {
+        &-title {
             font-size: 6.8rem;
 
             transition: 0.5s all ease-in-out;
@@ -40,7 +40,7 @@
             }
         }
 
-        &role {
+        &-role {
             font-weight: $font-weight-bold;
             font-size: 2rem;
             padding: 1.2rem 0;
@@ -48,7 +48,7 @@
         }
 
 
-        &desc {
+        &-desc {
             text-align: center;
             font-size: 2rem;
 

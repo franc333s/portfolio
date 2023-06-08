@@ -1,0 +1,8 @@
+.color-change-on-hover-effect {
+    transition: 4s all ease-in-out;
+
+    &:hover {
+        color: $color-blue;
+        transition: 0.1s all ease-in-out;
+    }
+}

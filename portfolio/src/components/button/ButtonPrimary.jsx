@@ -8,7 +8,7 @@ const ButtonPrimary = ({ to, text, openInNewTab }) => {
 	
 	return (
 		<>
-	  		<Link  className="btn__primary" to={to} {...linkProps}>{text}</Link>
+	  		<Link  className="btn--primary" to={to} {...linkProps}>{text}</Link>
 	  	</>
 
 	);

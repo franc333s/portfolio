@@ -49,7 +49,7 @@
         display: flex;
         justify-content: space-between;
         gap: 3.6rem;
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
 
         @include mq($bp-lowermedium) {
             gap: 4.4rem;
@@ -65,11 +65,10 @@
     &__dev-chall-links {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 8rem;
+        gap: 6rem;
 
         @include mq($bp-large) {
             grid-template-columns: 2fr 3fr;
-            gap: 6rem;
 
         }
     }

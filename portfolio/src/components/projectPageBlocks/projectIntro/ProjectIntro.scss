@@ -3,103 +3,85 @@
 
 
 .project-intro {
-    
+    position: relative;
 
     @include mq($bp-uppermedium) {
         display: flex;
-        align-items: center;
+        margin-bottom: 20rem;
     }
 
-    &__text {
-        font-family: $font-p-main-bigger;
-        font-size: 3.6rem;
-        z-index: 1;
-
-        @include mq($bp-lowermedium) {
-            font-size: 4rem;
-        
-        }
-
-        @include mq($bp-medium) {
-            font-size: 4.4rem;
-        
-        }
-
-        @include mq($bp-uppermedium) {
-            width: 70%;
-        }
-
-        @include mq($bp-lowerlarge) {
-            width: 60%;
-        }
-    
-        @include mq($bp-large) {
-            font-size: 5.2rem;
-    
-        }
-    
-        @include mq($bp-xlarge) {
-            font-size: 6.8rem;
-            
-        }
+    @include mq($bp-lowerlarge) {
+        margin-bottom: 28rem;
     }
 
-    &__image--desktop {
-        width: 100%;
-        opacity: 0.2;
-        transition: opacity 0.3s ease-in-out;
-        z-index: 0;
-        // object-fit: cover;
-        // margin: 2rem 0 8rem;
-        // box-shadow: 0 0 .6rem $color-bg-gray;
+    @include mq($bp-xlarge) {
+        margin-bottom: 48rem;
+    }
 
-        position: relative;
-        // width: 50%;
+    &__images {
 
-        &:hover {
-            opacity: 1;
-            position: absolute;
-            top: 40;
-            left: 40;
-            z-index: 2;
+        &--desktop {
+            width: 100%;
+            border-radius: .8rem;
+            box-shadow: $color-box-shadow-project;
+            margin-bottom: 8rem;
+
+            @include mq($bp-uppermedium) {
+                width: 70%;
+                border-radius: 1.6rem;
+                opacity: 0.3;
+                z-index: z(default);
+                transition: opacity 0.3s ease-in-out;
+                position: absolute;
+                top: 50%;
+                left: 30%;  
+            }
+    
+            @include mq($bp-large) {
+                top: 40%;
+            }
+    
+            @include mq(591px, max-width) {
+                display: none;
+            }
+    
+            &:hover {
+                opacity: 1;
+                z-index: z(over);
+            }
         }
-        
 
         &--mobile {
+            width: 100%;
             border-radius: 1.6rem;
+            box-shadow: $color-box-shadow-project;
+            margin-top: 4rem;
+            margin-bottom: 8rem;
 
             @include mq($bp-lowermedium) {
                 display: none;
             }
-           
-        }
-
-        &--desktop {
-            border-radius: 1.6rem;
-            
-            // position: absolute;
-            // inset: 100% 0 0 15%;
-    
-
-
-
-            @include mq($bp-uppermedium) {
-                border-radius: 2.4rem;
-            }
-
-            @include mq($bp-lowerlarge) {
-                
-            }
-
-            @include mq(591px, max-width) {
-                display: none;
-            }
-
         }
     }
 
+    &__text {
+        font-family: $font-p-main-bigger;
+        font-size: $project-intro-font-size-base;
+        z-index: z(default);
+    
+        @include mq($bp-lowermedium) {
+            padding-bottom: 4rem;
+        }
+    
+        @include mq($bp-uppermedium) {
+            width: 70%;
+        }
+    
+        @include mq($bp-lowerlarge) {
+            width: 65%;
+        }
+    }
 }
-
 
 
 

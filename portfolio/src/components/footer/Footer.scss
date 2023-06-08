@@ -40,7 +40,7 @@
         }
 
         &__item {
-            transition: 0.4s all ease-in-out;
+            transition: $hover-transition-btn;
             cursor: pointer;
         
             &:hover {

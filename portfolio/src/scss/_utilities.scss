@@ -10,28 +10,6 @@
     justify-self: end;
 }
 
-
-.accent-text {
-    color: $color-black;
-    font-family: $font-secondary-assistant;
-    font-size: 8.4rem;
-    text-transform: uppercase;
-    line-height: 80%;
-
-    @include mq($bp-medium) {
-        font-size: 16rem;
-    }
-
-    @include mq($bp-large) {
-        font-size: 18rem;
-    }
-
-    @include mq($bp-xlarge) {
-        font-size: 22rem;
-    }
-
-}
-
 .text-lowercase-reg {
     text-transform: lowercase;
     font-weight: $font-weight-regular;

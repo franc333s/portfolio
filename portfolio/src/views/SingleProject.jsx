@@ -33,7 +33,7 @@ const SingleProject = () => {
     
         return (
             <div>
-                <main className="vertical-padding">
+                <main className="vertical-padding project">
 
                     <div>
                         <ProjectHero

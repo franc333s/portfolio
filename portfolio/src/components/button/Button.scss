@@ -4,8 +4,8 @@
 
 .btn {
 
-    &__primary,
-    &__secondary {
+    &--primary,
+    &--secondary {
         font-family: $font-btn-secondary;
         text-transform: uppercase;
         text-align: center;
@@ -16,7 +16,7 @@
         padding: 2rem 0;
         width: 100%;
 
-        transition: 0.4s all ease-in-out;
+        transition: $hover-transition-btn;
         cursor: pointer;
 
         background-position: bottom;
@@ -29,9 +29,9 @@
         }
     }
 
-    &__primary {
+    &--primary {
         background-color: $color-bg-green;
-        font-size: 2.8rem;
+        font-size: $button-primary-font-size;
 
         &:hover {
             color: $color-green;
@@ -40,9 +40,9 @@
         }
     }
 
-    &__secondary {
+    &--secondary {
         border: 2px solid $color-bg-blue;
-        font-size: 2.8rem;
+        font-size: $button-secondary-font-size;
 
         &:hover {
             color: $color-green;
@@ -51,23 +51,23 @@
         }
     }
 
-    &__terciary {
+    &--terciary {
         font-family: $font-btn-primary;
         font-weight: $font-weight-bold;
-        font-size: 2.4rem;
+        font-size: $button-terciary-font-size;
         text-transform: uppercase;
         white-space: nowrap;
         padding-left: 0;
         padding-right: 0;
 
-        transition: 0.4s all ease-in-out;
+        transition: $hover-transition-btn;
         cursor: pointer;
 
         &:hover {
             background-color: transparent;
             color: transparent;
             box-shadow: none;
-            text-shadow: 0 0 5px $color-blue;
+            text-shadow: $text-shadow-blue;
         }
     }
 }

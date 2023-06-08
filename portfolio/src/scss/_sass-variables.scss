@@ -7,6 +7,7 @@ $color-green: hsl(81 100% 69%); // #C9FF63
 $color-gray: hsl(36 16% 93%); // #F0EEEA
 $color-black: hsl(0 0% 6%); // #101010
 
+
 //Transparencies
 $color-off-white-trans: hsla(36, 26%, 96%, 0.8); // #F8F6F3
 
@@ -20,6 +21,13 @@ $color-bg-green: $color-green;
 $color-bg-gray: $color-gray;
 $color-bg-black: $color-black;
 
+
+$color-bg-gray-darker: darken($color-bg-gray, 8%);
+
+
+// Shadows
+$color-box-shadow-project: 0 0 .8rem $color-bg-gray-darker;
+$color-box-shadow-person: 0 0 .8rem .4rem $color-bg-gray;
 
 // Fonts
 
@@ -53,15 +61,35 @@ $font-btn-primary: $font-primary;
 $font-btn-secondary: $font-secondary;
 
 
-    // Font sizes
+
+// Font sizes implementations
+
     // Hero title
-$hero-font-size-sm: clamp(3.52rem, 4.56vw + 1.74rem, 10.5rem);
 $hero-font-size-base: clamp(4.4rem, 6.27vw + 1.95rem, 14rem);
-$hero-font-size-md: clamp(5.5rem, 8.6vw + 2.14rem, 18.66rem);
-$hero-font-size-lg: clamp(6.88rem, 11.77vw + 2.29rem, 24.88rem);
-$hero-font-size-xl: clamp(8.59rem, 16.06vw + 2.33rem, 33.16rem);
-$hero-font-size-xxl: clamp(10.74rem, 21.87vw + 2.21rem, 44.2rem);
-$hero-font-size-xxxl: clamp(13.43rem, 29.73vw + 1.83rem, 58.92rem);
+    //H2 title
+$h2-font-size-base: clamp(6.8rem, 7.32vw + 3.95rem, 18rem);
+    //Accent text
+$accent-text-font-size-base: clamp(8.4rem, 8.89vw + 4.93rem, 22rem);
+    // Project intro text description
+$project-intro-font-size-base: clamp(3.6rem, 2.09vw + 2.78rem, 6.8rem);
+
+    // Buttons
+$button-primary-font-size: 2.8rem;
+$button-secondary-font-size: 2.8rem;
+$button-terciary-font-size: 2.4rem;
+$button-project-nav-font-size: 2rem;
+
+
+
+
+// Padding implementations
+
+    // Vertical main paddings
+$vertical-padding-base: clamp(1.6rem, 2.88vw + 0.48rem, 6rem);
+    // Portfolio paddings
+$padding-top-portfolio-base: clamp(11.5rem, -2.88vw + 12.2rem, 8.75rem);
+    // Project paddings
+$padding-top-project-base: clamp(5.88rem, 3.79vw + 4.95rem, 9.5rem);
 
 
 
@@ -77,7 +105,7 @@ $bp-xlarge: 120rem; // 1920px
 
 // Variables for @each / @for / etc
 
-    // Maps
+// Maps
 $map-colors: (
     "white": $color-white,
     "off-white": $color-off-white,
@@ -88,5 +116,21 @@ $map-colors: (
     "black": $color-black
 );
 
+$map-layers: (
+    "below": -1,
+    "default": 0,
+    "above": 1,
+    "over": 2,
+    "top": 3
+);
+
+@function z($layer) {
+    @return map-get($map-layers, $layer);
+}
 
 
+// Efects
+
+$hover-transition-btn: 0.4s all ease-in-out;
+$text-shadow-red: 0 0 5px $color-red;
+$text-shadow-blue: 0 0 5px $color-blue;

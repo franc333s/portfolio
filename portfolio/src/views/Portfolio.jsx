@@ -6,7 +6,7 @@ export default function Portfolio() {
 
     return (
         <>
-        <main className="portfolio main--padding">
+        <main className="vertical-padding portfolio">
             <h1 className="portfolio__header">Latest Dev / Design projects</h1>
             <div className="portfolio__project">
               {projectData.map((project) => (

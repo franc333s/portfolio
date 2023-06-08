@@ -27,7 +27,7 @@ const ButtonTerciary = ({ to, text, openInNewTab, smoothScroll }) => {
         : {};
 
         return (
-            <Link className="btn__terciary" to={to} {...linkProps}>
+            <Link className="btn--terciary" to={to} {...linkProps}>
                 {text}
             </Link>
         );
