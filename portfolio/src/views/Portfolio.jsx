@@ -1,5 +1,5 @@
 import ProjectBlock from '../components/projectBlock/ProjectBlock';
-import projectData from '../../projectsData.json'
+import projectData from '../../src/json/projectsData.json'
 
 
 export default function Portfolio() {

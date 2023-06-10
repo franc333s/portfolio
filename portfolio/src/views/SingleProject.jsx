@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ProjectFooterNav from '../components/projectPageBlocks/projectFooterNav/ProjectFooterNav';
 import ProjectHero from '../components/projectPageBlocks/projectHero/ProjectHero';
-import projectsData from '../../projectsData.json';
+import projectsData from '../../src/json/projectsData.json';
 import Error404 from '../components/error404/404';
 import ProjectIntro from '../components/projectPageBlocks/projectIntro/ProjectIntro';
 import ProjectDescription from '../components/projectPageBlocks/projectDescription/ProjectDescription';
