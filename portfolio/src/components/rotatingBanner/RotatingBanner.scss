@@ -1,0 +1,33 @@
+@import '../../scss/mixins';
+@import '../../scss/sass-variables';
+
+
+
+.rotating-banner {
+    position: relative;
+}
+
+.rotating-banner__text {
+    height: 14rem;
+    width: 14rem;
+    // animation: rotate 8s linear infinite;
+    overflow-x: hidden;
+}
+
+// @keyframes rotate {
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
+
+.rotating-banner__text + svg {
+    height: 5rem;
+    width: 5rem;
+    fill: $color-bg-green;
+
+    position: absolute;
+    top: 4.5rem;
+    left: 4.5rem;
+}
+
+

@@ -1,7 +1,8 @@
-import { Link, animateScroll as scroll } from "react-scroll";
 import ButtonPrimary from "../components/button/ButtonPrimary";
 import ButtonSecondary from "../components/button/ButtonSecondary";
 import ButtonTerciary from "../components/button/ButtonTerciary";
+import RotatingBanner from "../components/rotatingBanner/RotatingBanner";
+
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
 
             <section className="home-hero">
                 <div className="home-hero__header">
+                    <RotatingBanner className="home-hero__header__a"/>
                     <h1>
                         <div>Frontend Designer</div> 
                         <div>with a background</div>

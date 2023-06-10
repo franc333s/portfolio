@@ -22,7 +22,7 @@ section {
 
 
 .home-hero {
-    height: 80vh;
+    height: 86vh;
 
     display: flex;
     flex-direction: column;
@@ -41,6 +41,19 @@ section {
 
     @include mq($bp-xlarge) {
         height: 96vh;
+    }
+
+    &__header {
+        width: 100%;
+        display: grid;
+        gap: 2rem;
+
+        &__a {
+            
+            @include mq($bp-medium) {
+                justify-self: flex-end;
+            }
+        }
     }
 }
 

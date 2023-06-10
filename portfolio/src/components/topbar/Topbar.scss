@@ -27,6 +27,10 @@
             grid-template-columns: 2.5fr 1.2fr;
     }
 
+    @include mq($bp-large) {
+        grid-template-columns: 4fr 1fr;
+}
+
     &__home {
         transition: $hover-transition-btn;
         cursor: pointer;
