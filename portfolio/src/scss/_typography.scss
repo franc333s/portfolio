@@ -50,3 +50,10 @@ h3,
     text-transform: uppercase;
     line-height: 80%;
 }
+
+.huge-text {
+    font-size: $huge-text-base;
+    font-family: $font-primary;
+    line-height: 130%;
+    padding-top: clamp(2.25rem, 1.57vw + 1.87rem, 3.75rem);
+}

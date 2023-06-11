@@ -7,7 +7,7 @@ const SmoothScrollButton = ({ to, text }) => {
         scroller.scrollTo(to, {
             smooth: true,
             duration: 500,
-            offset: -100,
+            offset: -5,
         });
     };
 

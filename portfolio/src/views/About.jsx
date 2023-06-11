@@ -1,5 +1,6 @@
 import ButtonPrimary from "../components/button/ButtonPrimary";
 import ButtonSecondary from "../components/button/ButtonSecondary";
+import Cta from "../components/cta/Cta";
 
 
 
@@ -10,6 +11,7 @@ const About = () => {
          <main className="vertical-padding">
 
             <section className="about-section">
+                
                 <h2>A little bit of <span className="accent-text"><span className="color-change-on-hover-effect">c</span><span className="color-change-on-hover-effect">o</span><span className="color-change-on-hover-effect">n</span><span className="color-change-on-hover-effect">t</span><span className="color-change-on-hover-effect">e</span><span className="color-change-on-hover-effect">x</span><span className="color-change-on-hover-effect">t</span></span></h2>
 
                 <div className="about-section__text">
@@ -47,13 +49,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className="cta-section">
-                <div className="cta-section__claim">
-                    <p className="h2">Let's <span className="accent-text text-lowercase-reg"><span className="color-change-on-hover-effect">t</span><span className="color-change-on-hover-effect">a</span><span className="color-change-on-hover-effect">l</span><span className="color-change-on-hover-effect">k</span><span className="color-change-on-hover-effect">!</span></span></p>
-                    
-                </div>
-                <ButtonPrimary to="mailto:marinafase@gmail.com" text="Email me"/>
-            </section>
+            <Cta />
 
         </main>
         </>

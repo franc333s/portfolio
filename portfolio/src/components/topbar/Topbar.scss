@@ -11,8 +11,8 @@
     z-index: z(above);
 
     color: $color-red;
-    font-family: $font-primary;
-    font-size: 2rem;
+    font-family: $font-topbar;
+    font-size: $button-topbar-font-size-sm;
     text-transform: uppercase;
     font-weight: $font-weight-bold;
     background-color: $color-bg-off-white-trans;
@@ -25,8 +25,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-
-    background-color: $color-bg-gray-trans;
 
     &__home {
         transition: $hover-transition-btn;
@@ -42,12 +40,13 @@
 
     &__btn {
         font-family: $font-primary;
-        font-size: 2rem;
+        font-size: $button-topbar-font-size-sm;
         text-transform: uppercase;
         font-weight: $font-weight-bold;
         transition: $hover-transition-btn;
         cursor: pointer;
         z-index: (top);
+        padding-right: 0;
 
         &:hover {
             background-color: transparent;
@@ -68,8 +67,6 @@
         overflow: hidden;
         transition: all .5s ease;
 
-
-
         @include mq($bp-medium) {
             height: auto;
             width: auto;
@@ -83,30 +80,43 @@
         &__list {
             display: flex;
             flex-direction: column;
-            list-style: none;
-            padding-top: 4rem;
+
+            background-color: $color-bg-blue;
+            color: $color-off-white;
+            font-family: $font-topbar-assistant;
+            font-size: $button-topbar-font-size-md;
+            border-radius: 1rem;
+
+            margin-top: 4rem;
+            padding-bottom: 8rem;
             
 
             @include mq($bp-medium) {
                 display: flex;
                 flex-direction: row;
-                height: auto;
-                width: auto;
+
                 gap: 4rem;
+                margin-top: 0;
                 padding-top: 0;
+                padding-bottom: 0;
+
+                background-color: transparent;
+                color: $color-red;
+                font-family: $font-topbar;
+                border-radius: 0;
             }
 
             &__item {
                 display: flex;
                 justify-content: center;
                 padding-top: 8rem;
-                font-size: 6rem;
+                font-size: 8.4rem;
                 font-weight: $font-weight-regular;
 
                 @include mq($bp-medium) {
                     flex-direction: row;
                     padding-top: 0;
-                    font-size: $button-font-size-sm;
+                    font-size: $button-topbar-font-size-sm;
                     font-weight: $font-weight-bold;
                     
 

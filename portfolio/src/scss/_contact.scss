@@ -5,12 +5,6 @@
 
 
 .contact {
-    padding: 24rem 0 0;
-
-    @include mq($bp-uppermedium) {
-        // height: calc(100vh - 23.1rem);
-
-    }
 
     &__desc {
         padding-top: 2.8rem;

@@ -34,6 +34,8 @@ $color-bg-gray-darker: darken($color-bg-gray, 8%);
 $color-box-shadow-project: 0 0 .8rem $color-bg-gray-darker;
 $color-box-shadow-person: 0 0 .8rem .4rem $color-bg-gray;
 
+
+
 // Fonts
 
     // Typefonts
@@ -61,10 +63,12 @@ $font-p-fixed-small: $font-primary;
 $font-title: $font-secondary;
 $font-title-variation: $font-secondary-assistant;
 
-    // Buttons & Links
+    // Buttons, Links, Topbar, Footer
 $font-btn-primary: $font-primary;
 $font-btn-secondary: $font-secondary;
-
+$font-topbar: $font-secondary;
+$font-topbar-assistant: $font-secondary-assistant;
+$font-footer: $font-primary;
 
 
 // Font sizes implementations
@@ -80,6 +84,9 @@ $project-intro-font-size-base: clamp(3.6rem, 2.09vw + 2.78rem, 6.8rem);
     // 404 font size
 $error404-font-size-base: clamp(12.5rem, 23.53vw + 6.76rem, 35rem);
 
+// Intro text home]
+$huge-text-base: clamp(2rem, 5.23vw + 0.73rem, 7rem);
+
 
 
     // Buttons
@@ -92,7 +99,8 @@ $button-font-size-lg: 2.8rem;
 $button-primary-font-size: $button-font-size-lg;
 $button-secondary-font-size: $button-font-size-md;
 $button-terciary-font-size: $button-font-size-sm;
-$button-topbar-font-size: $button-font-size-sm;
+$button-topbar-font-size-sm: $button-font-size-sm;
+$button-topbar-font-size-md: $button-font-size-md;
 $button-project-nav-font-size: $button-font-size-sm;
 
 
@@ -101,6 +109,8 @@ $button-project-nav-font-size: $button-font-size-sm;
 // Padding implementations
     // Vertical main paddings
 $vertical-padding-base: clamp(1.6rem, 2.88vw + 0.48rem, 6rem);
+    // About paddings
+$padding-top-about-base: clamp(11.5rem, -2.88vw + 12.2rem, 8.75rem);
     // Portfolio paddings
 $padding-top-portfolio-base: clamp(11.5rem, -2.88vw + 12.2rem, 8.75rem);
     // Project paddings

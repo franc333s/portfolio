@@ -1,7 +1,6 @@
 @import './mixins';
 @import './sass-variables';
 
-
 h1,
 h2,
 h3,
@@ -16,16 +15,13 @@ section {
     padding: 0;
 }
 
-
 .vertical-padding {
     padding-left: $vertical-padding-base;
     padding-right: $vertical-padding-base;
 }
 
-
 .home-hero {
     height: 86vh;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -50,6 +46,10 @@ section {
         display: grid;
         gap: 2rem;
 
+        @include mq($bp-medium) {
+            gap: 8rem;
+        }
+
         &__a {
             
             @include mq($bp-medium) {
@@ -63,7 +63,7 @@ section {
     padding: 10rem 0;
 
     @include mq($bp-medium) {
-        padding: 10rem 0 16rem;
+        padding: 10rem 0;
     }
 
     &__text {
@@ -80,6 +80,7 @@ section {
 }
 
 .about-section {
+    margin-top: $padding-top-about-base;
 
     &__text {
 
@@ -94,7 +95,6 @@ section {
                 padding-right: 0;
             }
         }
-
 
         &__bottom {
             padding-left: 0;
@@ -112,7 +112,6 @@ section {
                 padding-top: 6rem;
                 padding-bottom: 10rem;
             }
-
         }
     }
 
@@ -158,11 +157,8 @@ section {
 
     & h3 {
         padding-bottom: 2rem;
-
     }
 }
-
-
 
 .portfolio {
     padding-top: $padding-top-portfolio-base;
@@ -173,9 +169,12 @@ section {
 
 }
 
-
-
 .project {
     padding-top: $padding-top-project-base;
 
+}
+
+.contact {
+    padding-top: 36rem;
+    min-height: calc( 100vh - 5.7rem);
 }
