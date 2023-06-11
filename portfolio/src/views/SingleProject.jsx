@@ -41,8 +41,7 @@ const SingleProject = () => {
                             linkToSite={project.linkToSite}
                             imagePathMobile={project.imagePathMobile}
                             imagePathDesktop={project.imagePathDesktop}
-                            altText={project.altText}
-                        />
+                            altText={project.altText}/>
                     </div>
 
                     <div>
@@ -50,8 +49,7 @@ const SingleProject = () => {
                         introText={project.introText}
                         imageAuxPathMobile={project.imageAuxPathMobile}
                         imageAuxPathDesktop={project.imageAuxPathDesktop}
-                        altTextAuxImage={project.altTextAuxImage}
-                    />
+                        altTextAuxImage={project.altTextAuxImage}/>
                     </div>
 
                     <div>
@@ -61,9 +59,7 @@ const SingleProject = () => {
                             year={project.year}
                             dev={project.dev}
                             challenges={project.challenges}
-                            linkGithub={project.linkGithub}
-                       
-                    />
+                            linkGithub={project.linkGithub}/>
                     </div>
 
                 </main>

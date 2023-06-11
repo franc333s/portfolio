@@ -2,15 +2,16 @@
 @import '../../scss/mixins';
 
 
+
 .topbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: z(top);
+    z-index: z(above);
 
     color: $color-red;
-    font-family: $font-secondary;
+    font-family: $font-primary;
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: $font-weight-bold;
@@ -18,18 +19,14 @@
 
     padding-left: $vertical-padding-base;
     padding-right: $vertical-padding-base;
-    padding-top: 2.8rem;
-    padding-bottom: 2.8rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-
-    @include mq($bp-medium) {
-            display: grid;
-            grid-template-columns: 2.5fr 1.2fr;
-    }
-
-    @include mq($bp-large) {
-        grid-template-columns: 4fr 1fr;
-}
+    background-color: $color-bg-gray-trans;
 
     &__home {
         transition: $hover-transition-btn;
@@ -43,23 +40,79 @@
         }
     }
 
+    &__btn {
+        font-family: $font-primary;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+        transition: $hover-transition-btn;
+        cursor: pointer;
+        z-index: (top);
+
+        &:hover {
+            background-color: transparent;
+            color: transparent;
+            box-shadow: none;
+            text-shadow: $text-shadow-red;
+        }
+
+        @include mq($bp-medium) {
+            display: none;
+        }
+    }
+
+
     &__nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s ease;
 
-        &__item {
-            transition: $hover-transition-btn;
-            cursor: pointer;
 
-            &:hover {
-                background-color: transparent;
-                color: transparent;
-                box-shadow: none;
-                text-shadow: $text-shadow-red;
+
+        @include mq($bp-medium) {
+            height: auto;
+            width: auto;
+        }
+
+        &.isActive {
+            height: 100vh;
+            opacity: 1;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding-top: 4rem;
+            
+
+            @include mq($bp-medium) {
+                display: flex;
+                flex-direction: row;
+                height: auto;
+                width: auto;
+                gap: 4rem;
+                padding-top: 0;
             }
+
+            &__item {
+                display: flex;
+                justify-content: center;
+                padding-top: 8rem;
+                font-size: 6rem;
+                font-weight: $font-weight-regular;
+
+                @include mq($bp-medium) {
+                    flex-direction: row;
+                    padding-top: 0;
+                    font-size: $button-font-size-sm;
+                    font-weight: $font-weight-bold;
+                    
+
+              }
+          }
         }
     }
 }
-
-
 

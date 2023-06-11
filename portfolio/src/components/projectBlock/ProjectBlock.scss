@@ -3,7 +3,11 @@
 
 
 .project-block {
-    padding-bottom: 20rem;
+    padding-bottom: 12rem;
+
+    @include mq($bp-lowermedium) {
+        padding-bottom: 20rem;
+    }
 
     &__project-title,
     &__project-role {

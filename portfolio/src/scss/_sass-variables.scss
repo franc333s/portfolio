@@ -38,8 +38,8 @@ $color-box-shadow-person: 0 0 .8rem .4rem $color-bg-gray;
 
     // Typefonts
 $font-primary:'IBM Plex Mono', 'Courier New', Courier, monospace;
-$font-secondary: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
-$font-primary-assistant: 'Fira Sans Condensed', Helvetica, Arial, sans-serif;
+$font-secondary: 'Roboto Condensed', 'Helvetica', 'Arial Narrow', sans-serif;
+$font-primary-assistant: 'Fira Sans Condensed', 'Helvetica', 'Arial Narrow', sans-serif;
 $font-secondary-assistant: 'VT323', monospace;
 
     // Weights
@@ -99,7 +99,6 @@ $button-project-nav-font-size: $button-font-size-sm;
 
 
 // Padding implementations
-
     // Vertical main paddings
 $vertical-padding-base: clamp(1.6rem, 2.88vw + 0.48rem, 6rem);
     // Portfolio paddings
