@@ -28,3 +28,20 @@
 }
 
 
+// Loop for padding-top and padding-bottom from 1rem to 16rem
+$increment: 1rem;
+$max-value: 20rem;
+$steps: floor( calc($max-value / $increment) );
+
+@for $i from 1 through $steps {
+  .padding-top-#{$i}rem {
+    padding-top: $i * $increment;
+  }
+  
+  .padding-bottom-#{$i}rem {
+    padding-bottom: $i * $increment;
+  }
+}
+
+
+

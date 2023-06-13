@@ -33,7 +33,7 @@ section {
     }
 
     @include mq($bp-uppermedium) {
-        height: 90vh;
+        height: 92vh;
     }
 
 
@@ -47,27 +47,19 @@ section {
         gap: 2rem;
 
         @include mq($bp-medium) {
-            gap: 8rem;
-        }
-
-        &__a {
-            
-            @include mq($bp-medium) {
-                justify-self: flex-end;
-            }
+            //gap: 4rem;
         }
     }
 }
 
 .home-intro {
-    padding: 10rem 0;
+    padding: 10rem 0 0;
 
     @include mq($bp-medium) {
-        padding: 10rem 0;
+        padding: 10rem 0 0;
     }
 
     &__text {
-        padding-bottom: 3.6rem;
 
         @include mq($bp-medium) {
             padding-right: 40%;
@@ -157,7 +149,14 @@ section {
 
     & h3 {
         padding-bottom: 2rem;
+        padding-top: 10rem;
     }
+
+    & p {
+        padding-bottom: 4rem;
+    }
+
+
 }
 
 .portfolio {

@@ -9,8 +9,8 @@ export default function Contact() {
 
         <div className="vertical-padding">
             
-            <h1 className="h2">Say hey!</h1>
-            <p className="p--main contact__desc">Currently based in València (SP), I am available to work in office or remotely. If you want to <strong>get in touch, simply drop me a line at</strong>:</p>
+            <h1 className="h2">Say <span className="color-change-on-hover-effect">h</span><span className="color-change-on-hover-effect">e</span><span className="color-change-on-hover-effect">y</span><span className="color-change-on-hover-effect">!</span></h1>
+            <p className="p--main contact__desc">Currently based in València (SP), I am available to work in office or remotely. If you want to <strong>get in touch, drop me a line at</strong>:</p>
             <div className="contact__email-container">
                 <ArrowRight /><Link to="mailto:apellidofrances@gmail.com" className="contact__link__item">Apellidofrances@gmail.com</Link>
             </div>

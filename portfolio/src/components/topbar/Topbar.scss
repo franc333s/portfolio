@@ -2,13 +2,12 @@
 @import '../../scss/mixins';
 
 
-
 .topbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: z(above);
+    z-index: 3;
 
     color: $color-red;
     font-family: $font-topbar;
@@ -29,6 +28,7 @@
     &__home {
         transition: $hover-transition-btn;
         cursor: pointer;
+        z-index: 3;
 
         &:hover {
             background-color: transparent;
@@ -45,7 +45,7 @@
         font-weight: $font-weight-bold;
         transition: $hover-transition-btn;
         cursor: pointer;
-        z-index: (top);
+        z-index: 3;
         padding-right: 0;
 
         &:hover {
@@ -60,12 +60,12 @@
         }
     }
 
-
     &__nav {
         width: 100vw;
         height: 0;
         overflow: hidden;
         transition: all .5s ease;
+        z-index: 3;
 
         @include mq($bp-medium) {
             height: auto;
@@ -89,6 +89,7 @@
 
             margin-top: 4rem;
             padding-bottom: 8rem;
+            z-index: 3;
             
 
             @include mq($bp-medium) {
@@ -112,14 +113,21 @@
                 padding-top: 8rem;
                 font-size: 8.4rem;
                 font-weight: $font-weight-regular;
+                transition: $hover-transition-btn;
+                z-index: 3;
+
+                &:hover {
+                    background-color: transparent;
+                    color: transparent;
+                    box-shadow: none;
+                    text-shadow: $text-shadow-red;
+                }
 
                 @include mq($bp-medium) {
                     flex-direction: row;
                     padding-top: 0;
                     font-size: $button-topbar-font-size-sm;
                     font-weight: $font-weight-bold;
-                    
-
               }
           }
         }

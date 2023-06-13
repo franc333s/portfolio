@@ -140,18 +140,7 @@ $map-colors: (
     "gray": $color-gray,
     "black": $color-black
 );
-
-$map-layers: (
-    "below": -1,
-    "default": 0,
-    "above": 1,
-    "over": 2,
-    "top": 3
-);
-
-@function z($layer) {
-    @return map-get($map-layers, $layer);
-}
+// Functions that runs this map in utilities.scss
 
 
 // Effects
